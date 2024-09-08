@@ -93,3 +93,34 @@
 .card-content button:hover {
     background-color: #f52eac; /* Darker shade on hover */
 }
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .card-content h1 {
+        font-size: 1.5em; /* Smaller font size on medium screens */
+    }
+
+    .card-content p {
+        font-size: 0.9em; /* Smaller font size on medium screens */
+    }
+
+    .card-content button {
+        padding: 10px 20px; /* Smaller padding on medium screens */
+        font-size: 12px; /* Smaller font size on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-content h1 {
+        font-size: 1.2em; /* Even smaller font size on small screens */
+    }
+
+    .card-content p {
+        font-size: 0.8em; /* Even smaller font size on small screens */
+    }
+
+    .card-content button {
+        padding: 8px 16px; /* Even smaller padding on small screens */
+        font-size: 10px; /* Even smaller font size on small screens */
+    }
+}

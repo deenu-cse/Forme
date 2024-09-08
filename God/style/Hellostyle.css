@@ -9,7 +9,7 @@
 .bigcon4 {
     width: 100%;
     height: 100vh;
-    background-image: url('https://i.pinimg.com/736x/ed/98/02/ed980235a538d7e5fa93528fc7c28be1.jpg');
+    background-image: url('https://i.pinimg.com/564x/5b/ab/ca/5babcad842cc5c2f087c42d5fdca5836.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -20,9 +20,9 @@
 /* Card styling */
 .card4 {
     position: relative;
-    width: 80%;
+    width: 90%;
     max-width: 800px;
-    height: 60%;
+    height: auto; /* Changed to auto to adjust based on content */
     background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
     border-radius: 10px;
     overflow: hidden;
@@ -35,7 +35,7 @@
     justify-content: center;
 }
 
-/* Card image styling */
+/* Card image styling (if you use an image in the future) */
 .card-img {
     width: 100%;
     height: auto;
@@ -44,11 +44,6 @@
 
 /* Card content styling */
 .card-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,13 +53,13 @@
 }
 
 .card-content h1 {
-    font-size: 2em;
+    font-size: 1.8em; /* Responsive font size */
     margin-bottom: 20px;
     color: #000; /* Dark color for the title */
 }
 
 .card-content p {
-    font-size: 1.2em;
+    font-size: 1em; /* Responsive font size */
     line-height: 1.5;
     margin-bottom: 20px;
     text-align: center;
@@ -74,11 +69,11 @@
     background-color: #ff47dd; /* Tomato color */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 12px 24px; /* Responsive padding */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px; /* Responsive font size */
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
@@ -87,4 +82,35 @@
 
 .card-content button:hover {
     background-color: #f52eac; /* Darker shade on hover */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .card-content h1 {
+        font-size: 1.5em; /* Smaller font size on smaller screens */
+    }
+
+    .card-content p {
+        font-size: 0.9em; /* Smaller font size on smaller screens */
+    }
+
+    .card-content button {
+        padding: 10px 20px; /* Smaller padding on smaller screens */
+        font-size: 12px; /* Smaller font size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-content h1 {
+        font-size: 1.2em; /* Even smaller font size on very small screens */
+    }
+
+    .card-content p {
+        font-size: 0.8em; /* Even smaller font size on very small screens */
+    }
+
+    .card-content button {
+        padding: 8px 16px; /* Even smaller padding on very small screens */
+        font-size: 10px; /* Even smaller font size on very small screens */
+    }
 }

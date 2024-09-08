@@ -9,7 +9,7 @@
 /* Background container */
 .bigcon8 {
     width: 100%;
-    height: 100%;
+    height: 100vh; /* Use viewport height for full screen */
     background-image: url('https://i.pinimg.com/736x/01/56/87/015687a73d325eae9013ceaac83466ce.jpg');
     background-size: cover;
     background-position: center;
@@ -36,8 +36,7 @@
     border-radius: 25px;
     overflow: hidden;
     text-align: center;
-    padding: 30px;
-    /* background: rgba(255, 255, 255, 0.8); Slightly transparent */
+    padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
 }
@@ -65,8 +64,7 @@
     margin: 10px 0;
     display: flex;
     align-items: center;
-    transition: transform 0.2s;
-    font-size: 18px;
+    font-size: 16px; /* Adjusted for better responsiveness */
 }
 
 .love-level input {
@@ -91,7 +89,7 @@
 
 .message-box label {
     color: #333;
-    font-size: 20px;
+    font-size: 18px; /* Adjusted for better responsiveness */
 }
 
 .message-box textarea {
@@ -100,7 +98,7 @@
     border-radius: 12px;
     border: 1px solid #f3a7b6;
     transition: border-color 0.2s, box-shadow 0.2s;
-    font-size: 16px;
+    font-size: 14px; /* Adjusted for better responsiveness */
 }
 
 .message-box textarea:focus {
@@ -114,11 +112,11 @@ button {
     background-color: #ff47dd;
     border: none;
     color: white;
-    padding: 15px 30px;
+    padding: 12px 24px; /* Adjusted for better responsiveness */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px; /* Adjusted for better responsiveness */
     margin: 20px 0;
     cursor: pointer;
     border-radius: 12px;
@@ -132,7 +130,7 @@ button:hover {
 
 /* Thank you message styling */
 .thank-you-message {
-    font-size: 1.5em;
+    font-size: 1.2em; /* Adjusted for better responsiveness */
     color: #ff47dd;
     animation: thankYouAnimation 3s ease-in-out;
 }
@@ -152,21 +150,21 @@ button:hover {
 }
 
 .thank-you-message p {
-    font-size: 1.2em;
+    font-size: 1em; /* Adjusted for better responsiveness */
     color: #333;
 }
 
 /* Error message styling */
 .error-message {
     color: #ff0000;
-    font-size: 1.2em;
+    font-size: 1em; /* Adjusted for better responsiveness */
     margin-top: 10px;
 }
 
 /* Love message styling */
 .love-message {
     margin-top: 20px;
-    font-size: 1.3em;
+    font-size: 1.2em; /* Adjusted for better responsiveness */
     color: #ff47dd;
     animation: loveMessageAnimation 5s infinite;
 }
@@ -199,5 +197,60 @@ button:hover {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .love-level {
+        font-size: 14px; /* Smaller font size on medium screens */
+    }
+
+    .message-box label {
+        font-size: 16px; /* Smaller font size on medium screens */
+    }
+
+    .message-box textarea {
+        font-size: 12px; /* Smaller font size on medium screens */
+    }
+
+    button {
+        padding: 10px 20px; /* Smaller padding on medium screens */
+        font-size: 14px; /* Smaller font size on medium screens */
+    }
+
+    .thank-you-message {
+        font-size: 1.1em; /* Smaller font size on medium screens */
+    }
+
+    .thank-you-message p {
+        font-size: 0.9em; /* Smaller font size on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .love-level {
+        font-size: 12px; /* Even smaller font size on small screens */
+    }
+
+    .message-box label {
+        font-size: 14px; /* Even smaller font size on small screens */
+    }
+
+    .message-box textarea {
+        font-size: 10px; /* Even smaller font size on small screens */
+    }
+
+    button {
+        padding: 8px 16px; /* Even smaller padding on small screens */
+        font-size: 12px; /* Even smaller font size on small screens */
+    }
+
+    .thank-you-message {
+        font-size: 1em; /* Even smaller font size on small screens */
+    }
+
+    .thank-you-message p {
+        font-size: 0.8em; /* Even smaller font size on small screens */
     }
 }
