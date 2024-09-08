@@ -1,0 +1,159 @@
+/* Ensure global styles are applied */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Background container */
+.bigcon8 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/736x/01/56/87/015687a73d325eae9013ceaac83466ce.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card styling */
+.card8 {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card content styling */
+.card-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333; /* Dark text for better readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Form styling */
+.love-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.love-level {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.love-level input {
+    margin-right: 10px;
+}
+
+.love-level label {
+    color: #333;
+}
+
+.love-level input:checked + label {
+    color: #ff47dd;
+    font-weight: bold;
+}
+
+/* Message box */
+.message-box {
+    margin-top: 20px;
+}
+
+.message-box label {
+    color: #333;
+}
+
+.message-box textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.2s;
+}
+
+.message-box textarea:focus {
+    border-color: #ff47dd;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    background-color: #ff47dd;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #f52eac;
+    transform: scale(1.05);
+}
+
+/* Thank you message styling */
+.thank-you-message {
+    font-size: 1.5em;
+    color: #ff47dd;
+}
+
+.thank-you-message p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff0000;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Love message styling */
+.love-message {
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #ff47dd;
+}
+
+/* Heart animation (for fun) */
+.love-level input:checked ~ label::before {
+    content: '❤️';
+    margin-right: 5px;
+    animation: heart-beat 1s infinite;
+}
+
+@keyframes heart-beat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

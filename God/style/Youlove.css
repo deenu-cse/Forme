@@ -1,0 +1,103 @@
+/* Ensure global styles are applied */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Background container */
+.bigcon7 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/564x/ec/53/c3/ec53c3eb43da6837af8a52601760b5ef.jpg');
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card styling */
+.card7 {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 95%;
+    background: transparent; /* Slightly transparent white background */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.card6 h1{
+    margin-top: 260px;
+}
+
+/* Card image styling */
+.card-img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5; /* Semi-transparent effect */
+}
+
+/* Card content styling */
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333; /* Dark text color */
+    padding: 20px;
+}
+
+.card-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #000; /* Dark color for the title */
+}
+
+.card-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-content button {
+    background-color: #ff47dd; /* Tomato color */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.card-content button:hover {
+    background-color: #f52eac; /* Darker shade on hover */
+}
+
+.btn-no {
+    position: absolute;
+}
