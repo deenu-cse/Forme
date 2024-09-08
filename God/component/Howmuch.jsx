@@ -21,6 +21,7 @@ export default function Howmuch() {
       setError('');
       try {
         await axios.post('https://forme-a509.onrender.com/submit', { loveLevel, message });
+        console.log(response.data);
         setSuccess(true);
         setSubmitted(true);
       } catch (err) {

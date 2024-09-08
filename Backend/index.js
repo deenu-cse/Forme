@@ -3,13 +3,18 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const Love = require('./lovemodel');
- // Make sure the path is correct
 
 const app = express();
 const PORT = 5000;
 
-// Middleware
-app.use(cors());
+// CORS configuration
+const corsOptions = {
+  origin: 'https://66dd61f2c84f8dbad69adb98--charming-lily-86f461.netlify.app', // Adjust as needed
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  allowedHeaders: 'Content-Type,Authorization'
+};
+
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 // Connect to MongoDB
@@ -33,6 +38,7 @@ app.post('/submit', async (req, res) => {
     await newLove.save();
     res.status(200).json({ success: true });
   } catch (err) {
+    console.error('Error saving data:', err);
     res.status(500).json({ error: 'Failed to save data' });
   }
 });
