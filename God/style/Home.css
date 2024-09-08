@@ -23,10 +23,8 @@
     width: 80%;
     max-width: 800px;
     height: 60%;
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    background: transparent; /* Slightly transparent white background */
     border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 20px;
     display: flex;

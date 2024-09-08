@@ -20,7 +20,7 @@ export default function Howmuch() {
     } else {
       setError('');
       try {
-        await axios.post('http://localhost:5000/submit', { loveLevel, message });
+        await axios.post('https://forme-a509.onrender.com/submit', { loveLevel, message });
         setSuccess(true);
         setSubmitted(true);
       } catch (err) {

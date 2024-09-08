@@ -13,11 +13,7 @@ export default function Home() {
     <>
       <div className="bigcon">
         <div className="card1">
-          <img
-            src='https://i.pinimg.com/564x/be/aa/e1/beaae1fe62f47d2d9aaa089752ad0f53.jpg'
-            alt="Background"
-            className="card-img"
-          />
+        
           <div className="card-content">
             <h1>Tumhare Liye Ek Khaas Paigham</h1>
             <p>

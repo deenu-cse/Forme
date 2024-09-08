@@ -13,7 +13,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/Forme', {
+mongoose.connect('mongodb+srv://vdeendayal866:deendayal199@forme.3efro.mongodb.net/?retryWrites=true&w=majority&appName=Forme', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
