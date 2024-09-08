@@ -12,11 +12,7 @@ export default function Chat() {
         <>
             <div className="bigcon5">
                 <div className="card5">
-                    <img
-                        src='https://i.pinimg.com/736x/a4/6a/16/a46a16d8735ce04dd4a7f5c0fef03fac.jpg'
-                        alt="Background"
-                        className="card-img"
-                    />
+                  
                     <div className="card-content">
                         <h1>Jab Main Chat Karte Karate Ruk Jata Hu</h1>
                         <p>

@@ -11,11 +11,7 @@ export default function Yourvoice() {
     <>
       <div className="bigcon3">
                 <div className="card3">
-                    <img
-                        src='https://i.pinimg.com/736x/67/1f/72/671f722407cf89eda6fcaecdd2f853f3.jpg'
-                        alt="Background"
-                        className="card-img"
-                    />
+                  
                     <div className="card-content">
                         <h1>Tumhari Awaaz</h1>
                         <p>

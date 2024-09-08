@@ -6,18 +6,14 @@ import { useNavigate } from 'react-router-dom'
 export default function Firstday() {
     const navigate = useNavigate()
 
-    const next2 = ()=>{
+    const next2 = () => {
         navigate('/Your-voice')
     }
     return (
         <>
             <div className="bigcon2">
                 <div className="card2">
-                    <img
-                        src='https://i.pinimg.com/736x/15/a2/b1/15a2b16c44d22a2544fc5687b80e80fd.jpg'
-                        alt="Background"
-                        className="card-img"
-                    />
+                  
                     <div className="card-content">
                         <h1>Vo pehla din</h1>
                         <p>

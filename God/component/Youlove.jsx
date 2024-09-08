@@ -30,7 +30,6 @@ export default function Youlove() {
                 <div className="card7">
                     <div className="card-content">
                         <h1>Do you Love me ..?</h1>
-                        <h2>Himmat hai to No click kar ke dikhaoo 😅🥹</h2>
                         <div className="btn">
                             <button onClick={next8}>Yes</button>
                             <button className="btn-no" style={{ top: noButtonPosition.top, left: noButtonPosition.left }}>No</button>

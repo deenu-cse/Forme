@@ -12,11 +12,7 @@ export default function Tumhiho() {
         <>
             <div className="bigcon6">
                 <div className="card6">
-                    <img
-                        src='https://i.pinimg.com/564x/9a/e4/ec/9ae4ecf1d166c68c1bcaa03e79f6af5b.jpg'
-                        alt="Background"
-                        className="card-img"
-                    />
+
                     <div className="card-content">
                         <h1>Please read this carefully! Aur haan poora padhana</h1>
                         <p>

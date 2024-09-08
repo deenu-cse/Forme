@@ -12,11 +12,7 @@ export default function Hellostyle() {
         <>
             <div className="bigcon4">
                 <div className="card4">
-                    <img
-                        src='https://i.pinimg.com/736x/98/e2/17/98e217ed1406080bf1ea9a3b0b5a9a7c.jpg'
-                        alt="Background"
-                        className="card-img"
-                    />
+                   
                     <div className="card-content">
                         <h1>Tumhara Hello Style</h1>
                         <p>
